@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "SearchInput": "../../components/SearchInput/SearchInput",
+    "Recommend": "../../components/Recommend/Recommend",
+    "GoodsCard": "../../components/GoodsCard/GoodsCard"
+  },
+  "navigationBarTitleText": "首页"
+}

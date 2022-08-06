@@ -1,0 +1,28 @@
+<view class="category-box">
+    <SearchInput></SearchInput>
+    <view class="content-container">
+        <scroll-view class="left-menu-box" scroll-y>
+            <view wx:for="{{leftMenuData}}" wx:key="id" class="menu-item">
+                <text
+                    bindtap="changeCategory"
+                    data-categorytype="{{item.name}}"
+                    class="{{ activeCategory === item.name ? 'active-category' : '' }}">{{item.name}}</text>
+            </view>
+        </scroll-view>
+        <scroll-view class="right-content-box" scroll-top="{{scrollTop}}" scroll-y>
+            <view wx:for="{{rightContentData}}" wx:key="id" class="parent-content-box">
+                <view class="level-two-title">
+                    <text>{{item.name}}</text>
+                </view>
+                <view class="content-box">
+                    <view class="block-content-box" wx:for="{{item.children}}" wx:for-item="child" wx:key="id">
+                        <navigator url="/pages/goods_list/index?id={{child.id}}" open-type="navigate">
+                            <image src="{{child.icon}}" mode="widthFix" />
+                            <text>{{child.name}}</text>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="home-box">
+  <!-- 搜索框 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播图 -->
+  <view class="swiper-box">
+    <swiper autoplay indicator-dots="true" interval="3000" circular="true" 	indicator-active-color="#9266f9">
+      <swiper-item wx:for="{{swiperList}}" wx:key="id">
+        <navigator url="/pages/goods_list/index?id={{item.id}}">
+          <image src="{{item.img_url}}" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 分类 -->
+  <view class="category-box">
+    <navigator wx:for="{{categoryList}}" wx:key="id" url="{{item.url}}" open-type="{{item.open_type}}">
+      <image src="{{item.img_url}}" />
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+  <!-- 推荐 -->
+  <view wx:for="{{recommendList}}" wx:key="type" class="recommend-box">
+    <Recommend title="{{item.product_title}}" list="{{item.product_list}}"></Recommend>
+  </view>
+  <!-- 精选 -->
+  <text class="chooceness-text">精选</text>
+  <view class="choiceness-box">
+    <view class="goods-card" wx:for="{{choicenessList}}" wx:key="id">
+      <GoodsCard
+        img="{{item.img_url}}"
+        id="{{item.id}}"
+        name="{{item.name}}"
+        price="{{item.price}}"
+        unit="{{item.unit}}">
+      </GoodsCard>
+    </view>
+  </view>
+</view>

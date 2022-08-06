@@ -1,0 +1,55 @@
+/**index.wxss**/
+.swiper-box swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.swiper-box swiper image {
+  width: 100%;
+  height: 340rpx;
+}
+.category-box {
+  display: flex;
+}
+.category-box navigator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+.category-box navigator image {
+  width: 94rpx;
+  height: 94rpx;
+}
+.recommend-box {
+  width: 100%;
+}
+.chooceness-text {
+  position: relative;
+  padding-left: 30rpx;
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #111111;
+}
+.chooceness-text::before {
+  content: "";
+  position: absolute;
+  left: 10rpx;
+  display: block;
+  width: 10rpx;
+  height: 36rpx;
+  background-color: var(--themeColor);
+}
+.choiceness-box {
+  width: 100%;
+  height: auto;
+  background-color: #666;
+}
+.choiceness-box .goods-card {
+  float: left;
+  width: 50%;
+  padding: 20rpx;
+}

@@ -1,0 +1,14 @@
+.goods-list-box {
+  height: 100%;
+}
+.goods-list-box .content-container {
+  display: flex;
+  padding: 20rpx 10rpx;
+  height: calc(100vh - 90rpx);
+  background-color: #f2f2f2;
+}
+.goods-list-box .content-container .goods-card {
+  float: left;
+  width: 50%;
+  padding: 20rpx;
+}

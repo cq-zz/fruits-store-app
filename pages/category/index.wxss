@@ -1,0 +1,72 @@
+.category-box {
+  height: 100%;
+}
+.category-box .content-container {
+  display: flex;
+  padding: 20rpx 10rpx;
+  height: calc(100vh - 90rpx);
+  background-color: #f2f2f2;
+}
+.category-box .content-container .left-menu-box {
+  flex: 2;
+}
+.category-box .content-container .left-menu-box .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 10rpx;
+}
+.category-box .content-container .left-menu-box .menu-item text {
+  font-size: 32rpx;
+}
+.category-box .content-container .left-menu-box .menu-item .active-category {
+  color: var(--themeColor);
+}
+.category-box .content-container .right-content-box {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.category-box .content-container .right-content-box .parent-content-box {
+  height: auto;
+  overflow: hidden;
+}
+.category-box .content-container .right-content-box .parent-content-box .level-two-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx 10rpx;
+}
+.category-box .content-container .right-content-box .parent-content-box .level-two-title::before {
+  content: "";
+  position: absolute;
+  left: 10rpx;
+  display: block;
+  width: 10rpx;
+  height: 28rpx;
+  background-color: var(--themeColor);
+  border-radius: 8rpx;
+}
+.category-box .content-container .right-content-box .parent-content-box .content-box {
+  background-color: #fff;
+  border-radius: 16rpx;
+  height: auto;
+  overflow: hidden;
+}
+.category-box .content-container .right-content-box .parent-content-box .content-box .block-content-box {
+  padding: 10rpx;
+  float: left;
+  width: 33.33%;
+}
+.category-box .content-container .right-content-box .parent-content-box .content-box .block-content-box navigator {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.category-box .content-container .right-content-box .parent-content-box .content-box .block-content-box navigator image {
+  width: 100%;
+}
+.category-box .content-container .right-content-box .parent-content-box .content-box .block-content-box navigator text {
+  text-align: center;
+}

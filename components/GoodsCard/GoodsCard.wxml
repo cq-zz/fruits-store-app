@@ -1,0 +1,13 @@
+<view class="goods-crad-box">
+    <navigator url="/pages/goods_detail/index?goods_id={{id}}">
+        <image src="{{img}}" mode="widthFix" />
+        <text class="goods-name">{{name}}</text>
+    </navigator>
+    <view class="goods-bottom">
+        <view>
+            <text class="goods-unit">{{unit}}</text>
+            <text class="goods-price">{{price}}</text>
+        </view>
+        <image src="../../icons/add-cart.png" class="add-cart" mode="widthFix" bindtap="addCart" data-params="{{id}}"/>
+    </view>
+</view>

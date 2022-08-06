@@ -1,0 +1,16 @@
+<view class="goods-list-box">
+    <SearchInput></SearchInput>
+    <view class="content-container">
+        <scroll-view scroll-y>
+            <view class="goods-card" wx:for="{{goodsList}}" wx:key="id">
+                <GoodsCard
+                    img="{{item.img_url}}"
+                    id="{{item.id}}"
+                    name="{{item.name}}"
+                    price="{{item.price}}"
+                    unit="{{item.unit}}">
+                </GoodsCard>
+            </view>
+        </scroll-view>
+    </view>
+</view>

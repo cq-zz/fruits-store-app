@@ -1,0 +1,86 @@
+.category-box {
+    height: 100%;
+
+    .content-container {
+        display: flex;
+        padding: 20rpx 10rpx;
+        // 90rpx表示搜索框所占的高
+        height: ~'calc(100vh - 90rpx)';
+        background-color: rgb(242, 242, 242);
+
+        .left-menu-box {
+            flex: 2;
+
+            .menu-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20rpx 10rpx;
+                
+                text {
+                    font-size: 32rpx;
+                }
+
+                .active-category {
+                    color: var(--themeColor);
+                }
+            }
+        }
+        .right-content-box {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+
+            .parent-content-box {
+                height: auto;
+                overflow: hidden;
+
+                .level-two-title {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding: 20rpx 30rpx 10rpx;
+                    
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 10rpx;
+                        display: block;
+                        width: 10rpx;
+                        height: 28rpx;
+                        background-color: var(--themeColor);
+                        border-radius: 8rpx;
+                    }
+                }
+
+                .content-box {
+                    background-color: #fff;
+                    border-radius: 16rpx;
+                    height: auto;
+                    overflow: hidden;
+    
+                    .block-content-box {
+                        padding: 10rpx;
+                        float: left;
+                        width: 33.33%;
+    
+                        navigator {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: auto;
+
+                            image {
+                                width: 100%;
+                            }
+        
+                            text {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

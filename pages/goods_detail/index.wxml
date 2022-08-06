@@ -1,0 +1,57 @@
+<view class="goods-detail-box">
+    <!-- 商品图片轮播 -->
+    <view class="swiper-box">
+        <swiper autoplay indicator-dots="true" interval="3000" circular="true" 	indicator-active-color="#9266f9">
+            <swiper-item
+                wx:for="{{goodInfo.goods_pics}}"
+                wx:key="p_id"
+                bindtap="handlePreivew"
+                data-url="{{item.p_url}}">
+                <image src="{{item.p_url}}" mode="widthFix" />
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 价格 -->
+    <view class="goods-price">
+        ￥{{goodInfo.goods_price}}
+    </view>
+    <!-- 名称 -->
+    <view class="goods-name-row">
+        <view class="goods-name">{{goodInfo.goods_name}}</view>
+        <view class="collect">
+            <text class="iconfont icon-shoucang"></text>
+            <view class="collect-text">收藏</view>
+        </view>
+    </view>
+    <!-- 评论 -->
+    <view class="goods-comment">
+        <view class="comment-title">评论</view>
+        <view wx:for="{{goodInfo.goods_comment}}" wx:key="comment_id" class="comment-box">
+            <text class="comment-user">{{item.comment_name}}：</text>
+            <text class="comment-content">{{item.comment_content}}</text>
+        </view>
+    </view>
+    <!-- 操作 -->
+    <view class="goods-operate">
+        <view class="tool-item">
+            <view class="iconfont icon-kefu1"></view>
+            <view>客服</view>
+            <button open-type="contact"></button>
+        </view>
+        <view class="tool-item">
+            <view class="iconfont icon-fenxiang"></view>
+            <view>分享</view>
+            <button open-type="share"></button>
+        </view>
+        <navigator class="tool-item" url="/pages/cart/index" open-type="switchTab">
+            <view class="iconfont icon-gouwuche"></view>
+            <view>购物车</view>
+        </navigator>
+        <view class="tool-item add-cart" bindtap="handleAddCart">
+            <view>加入购物车</view>
+        </view>
+        <view class="tool-item immediately-buy">
+            <view>立即购买</view>
+        </view>
+    </view>
+</view>

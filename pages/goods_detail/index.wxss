@@ -1,0 +1,124 @@
+.goods-detail-box {
+  padding-bottom: 90rpx;
+}
+.goods-detail-box .swiper-box {
+  height: 100vw;
+}
+.goods-detail-box .swiper-box swiper {
+  width: 100%;
+  height: 100%;
+}
+.goods-detail-box .swiper-box swiper image {
+  width: 100%;
+}
+.goods-detail-box .goods-price {
+  padding: 10rpx;
+  margin-top: 10rpx;
+  background-color: #fff;
+  color: #f05423;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.goods-detail-box .goods-name-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+}
+.goods-detail-box .goods-name-row .goods-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  padding-right: 10rpx;
+}
+.goods-detail-box .goods-name-row .collect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200rpx;
+  padding: 0 20rpx;
+  border-left: 4rpx solid #e6e6e6;
+}
+.goods-detail-box .goods-comment {
+  margin-top: 10rpx;
+  background-color: #fff;
+  padding: 10rpx 0;
+}
+.goods-detail-box .goods-comment .comment-title {
+  padding: 10rpx 20rpx;
+  border-bottom: 4rpx solid #e6e6e6;
+  font-size: 36rpx;
+  color: var(--themeColor);
+}
+.goods-detail-box .goods-comment .comment-box {
+  display: flex;
+  margin-top: 10rpx;
+  padding: 10rpx 20rpx;
+}
+.goods-detail-box .goods-comment .comment-box .comment-user {
+  color: #64b532;
+  white-space: nowrap;
+}
+.goods-detail-box .goods-comment .comment-box .comment-content {
+  color: #666;
+}
+.goods-detail-box .goods-operate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 90rpx;
+  width: 100vw;
+  background-color: #fff;
+  border-top: 2rpx solid #999;
+}
+.goods-detail-box .goods-operate .tool-item {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx !important;
+}
+.goods-detail-box .goods-operate .tool-item .iconfont {
+  font-size: 46rpx;
+}
+.goods-detail-box .goods-operate .tool-item button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.goods-detail-box .goods-operate .add-cart {
+  flex: 2;
+}
+.goods-detail-box .goods-operate .add-cart view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90rpx;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 32rpx !important;
+}
+.goods-detail-box .goods-operate .immediately-buy {
+  flex: 2;
+}
+.goods-detail-box .goods-operate .immediately-buy view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90rpx;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx !important;
+}

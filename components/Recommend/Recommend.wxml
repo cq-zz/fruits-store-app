@@ -1,0 +1,8 @@
+<view class="recommend-block-box">
+    <image src="{{title.img_url}}" mode="heightFix" class="title-img" />
+    <view class="content-box">
+        <navigator wx:for="{{list}}" wx:key="id" url="/pages/goods_list/index?id={{item.id}}">
+            <image src="{{item.img_url}}" />
+        </navigator>
+    </view>
+</view>

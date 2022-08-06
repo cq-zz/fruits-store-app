@@ -1,0 +1,22 @@
+/**app.wxss**/
+@import './styles/iconfont.wxss';
+
+
+
+page, view, text, swiper, swiper-item, image, navigator {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #666;
+}
+
+page {
+  /* 定义主题颜色 */
+  --themeColor: #9266f9;
+  /* 定义字体大小  定设计稿大小是375px
+    1px = 2rpx
+    14px = 28rpx
+  */
+  font-size: 28rpx;
+  background-color: #e6e6e6;
+}
